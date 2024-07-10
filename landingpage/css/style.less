@@ -1,0 +1,648 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html{
+  height: 100%;
+}
+body{
+  .container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 25px 10px;
+  }
+  header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-image: url("../img/bg-header.png");
+    .container{
+      display: flex;
+      justify-content: space-between;
+      .logo{
+        padding:10px;
+        img{
+          width: 100px;
+        }
+      }
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+          display: flex;
+          ul{
+            display: flex;
+            li{
+              padding-left: 40px;
+              a{
+                text-decoration: none;
+                  color: #ffffff;
+                font-family: "Gentium Book Basic";
+
+                font-size: 21px;
+                font-weight: 700;
+              }
+              a:hover{
+                color:#fff;
+                background: #2196f3;
+              }
+              a.active{
+                color: #c89f2d;
+              }
+          }
+
+        }
+      .social-nav{
+        li{
+          padding-left:20px;
+          a{
+            i{
+              color: #dab33e;
+            }
+          }
+        }
+
+      }
+
+
+    }
+    .menu-toggle{
+      color:#fff;
+      line-height: 50px;
+      font-size:24px;
+      cursor: pointer;
+      display: none;
+
+    }
+  }
+  #intro{
+    height: 100vh;
+    background-image: url("../img/Bg.png");
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    .container{
+      .intro-text{
+        opacity: 0.92;
+        text-shadow: 1px 1px 2px rgba(1, 1, 1, 0.64);
+        color: #ffffff;
+        font-family: "Yeseva One";
+        font-size: 90px;
+        font-weight: 400;
+        text-align: center;
+      }
+      .decoration{
+        margin: 34px 0px;
+        text-align: center;
+      }
+      .buttons{
+        text-align: center;
+        padding-bottom: 150px;
+        button{
+          border: 1px solid #ffffff;
+          background-color: #ffffff1f;
+          opacity: 0.7;
+          padding: 23px 52px 21px 51px;
+          margin-left:30px;
+          span{
+            color: #ffffff;
+            opacity: 1;
+            font-family: Lato;
+            font-size: 18px;
+            font-weight: 400;
+            text-transform: uppercase;
+          }
+        }
+        button:hover{
+          border: 1px solid #000000;
+          background-color: #000000;
+          opacity: 0.8;
+          span{
+            color: #ffffff;
+          }
+        }
+
+      }
+    }
+
+  }
+  #second{
+    background-image: url(../img/bg2.png) ;
+    background-attachment: fixed;
+    background-size: cover;
+    .container{
+      .content{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        .left{
+          display: flex;
+          flex-direction: column;
+          flex:1 1 auto;
+          width: 50%;
+          h2{
+            color: #cc9900;
+            font-family: "Yeseva One";
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
+          }
+          p{
+            color: #4c4c4c;
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 52px;
+          }
+          .img_second{
+            text-align: center;
+          }
+        }
+        .right{
+          flex:1 1 auto;
+          width: 50%;
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  #third{
+    background-image: url(../img/bg3.png) ;
+    background-attachment: fixed;
+    background-size: cover;
+    .container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      .content{
+        padding: 80px 81px 82px 83px ;
+        margin: 100px  0px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #fbf7c0;
+        background-color: #000000;
+        opacity: 0.67;
+        justify-content: flex-end;
+        width: 30%;
+        h2{
+          color: #ffffff;
+          font-family: "Yeseva One";
+          font-size: 36px;
+          font-weight: 400;
+          text-align: center;
+        }
+        .line{
+          text-align: center;
+          margin-top:16px;
+          margin-bottom: 31px;
+        }
+        p{
+          color: #ffffff;
+          font-family: Lato;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: center;
+          margin-bottom: 45px;
+        }
+        .columns{
+          text-align: center;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          img:nth-child(2){
+            padding: 0px 20px ;
+          }
+        }
+      }
+    }
+  }
+  #fourthly{
+    background-image: url(../img/bg4.png) ;
+    background-attachment: fixed;
+    background-size: cover;
+      .container{
+        padding-top: 50px;
+        .content{
+          padding: 50px 0px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+        .title{
+          margin-top: 50px;
+          color: #cc9900;
+          font-family: "Yeseva One";
+          font-size: 36px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: center;
+        }
+        .line{
+          text-align: center;
+          margin:22px 0px 29px 0px;
+        }
+          .name_price{
+            color: #c89f2d;
+            font-family: "Yeseva One";
+            font-size: 21px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #fbf7c0;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            margin-top: 20px;
+          }
+          .about{
+            color: #4c4c4c;
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+          }
+      }
+
+  }
+  }
+  #five{
+    background-image: url(../img/bg5.png) ;
+    background-attachment: fixed;
+    background-size: cover;
+    .container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      .content{
+        padding: 80px 81px 20px 83px ;
+        margin: 100px  0px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #fbf7c0;
+        background-color: #000000;
+        opacity: 0.67;
+        justify-content: flex-end;
+        width: 62%;
+        h2{
+          color: #ffffff;
+          font-family: "Yeseva One";
+          font-size: 36px;
+          font-weight: 400;
+          text-align: center;
+        }
+        .line{
+          text-align: center;
+          margin-top:16px;
+          margin-bottom: 31px;
+        }
+        p{
+          color: #dde0df;
+          font-family: "Gentium Book Basic";
+          font-size: 25px;
+          font-weight: 700;
+          line-height: 45px;
+          /* Text style for "I, f you’v" */
+          font-family: "Gentium Book Basic - Bold";
+          font-weight: 300;
+          text-align: center;
+          i{
+            padding: 0px 10px 10px 0px;
+            color: white;
+          }
+
+        }
+        .inc{
+          color: #dde0df;
+          font-family: Lato;
+          font-size: 18px;
+          font-weight: 400;
+          margin-top: 50px;
+          text-align: center;
+        }
+        }
+      }
+    }
+          #sixth{
+            background-image: url(../img/bg2.png) ;
+            background-attachment: fixed;
+            background-size: cover;
+          .container{
+            padding-top: 100px;
+            .content{
+              display: flex;
+              flex-direction: row;
+              .pictures{
+                display: flex;
+                flex-direction: row;
+                align-content: space-around;
+              }
+              .forms{
+                h2{
+                  color: #cc9900;
+                  font-family: "Yeseva One";
+                  font-size: 36px;
+                  font-weight: 400;
+                  line-height: 24px;
+                  text-align: center;
+                  margin-top: 50px;
+                  margin-bottom: 30px;
+                }
+                p{
+                  color: #4c4c4c;
+                  font-family: Lato;
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 24px;
+                  text-align: center;
+                  margin-top: 30px;
+                  margin-bottom: 52px;
+                }
+                .img_second{
+                  text-align: center;
+                }
+              }
+            }
+          }
+          }
+  }
+
+@media (max-width: 991px) {
+  body{
+
+    header{
+      .container{
+      padding: 0 20px;
+      .menu-toggle{
+        outline:none;
+        display: flex;
+        align-items: center;
+
+      }
+      nav{
+
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: #00000099;
+        top:77px;
+        left:-100%;
+        align-items: center;
+        display: block;
+        z-index: 1;
+        ul{
+          display: block;
+          text-align: center;
+          li{
+            padding: 25px 0px;
+            border-bottom: 1px solid rgba(0,0,0,.2);
+
+          }
+        }
+      }
+
+    }
+  }
+    #intro{
+      padding-top:120px;
+      .container{
+        .intro-text{
+          font-size: 26px;
+        }
+        .buttons{
+          button{
+            margin:20px 0px;
+          }
+        }
+      }
+    }
+
+
+    //~~~~~~~~~~~~~~~~~~~~~ANIMATION~~~~~~~~~~~~~~~~~~//
+    .active{
+      //left: 0!important;
+      -webkit-animation: fadein 1s ease-in forwards;
+      -moz-animation: fadein 1s ease-in forwards;
+      animation: fadein 1s ease-in forwards;
+    }
+    .non-active{
+      -webkit-animation: showin 1s ease-in forwards;
+      -moz-animation: showin 1s ease-in forwards;
+      animation: showin 1s ease-in forwards;
+    }
+  }
+  @-webkit-keyframes fadein {
+    from { opacity: 0; left: -100%; }
+    to { opacity: 1; left:0;}
+
+  }
+
+  @-moz-keyframes fadein {
+    from { opacity: 0; left: -100%; }
+    to { opacity: 1; left:0;}
+  }
+
+  @keyframes fadein {
+    from { opacity: 0; left: -100%; }
+    to { opacity: 1; left:0;}
+  }
+  @-webkit-keyframes showin {
+    from { opacity: 1; left: 0; }
+    to { opacity: 0; left:-100%;}
+  }
+
+  @-moz-keyframes showin {
+    from { opacity: 1; left: 0; }
+    to { opacity: 0; left:-100%;}
+  }
+
+  @keyframes showin {
+    from { opacity: 1; left: 0; }
+    to { opacity: 0; left:-100%;}
+  }
+}
+@media (min-width: 996px) {
+  body{
+    #intro{
+      .container{
+        .intro-text{
+          font-size: 70px;
+
+        }
+        .buttons{
+          padding: 50px 0px;
+        }
+      }
+    }
+    #third{
+      .container{
+        justify-content: center;
+        .content{
+
+          width: 55%;
+        }
+      }
+    }
+  }
+}
+@media(min-width: 769px) and (max-width: 995px){
+  body{
+    #third{
+      .container
+      {
+        justify-content: center;
+        .content{
+
+        }
+      }
+    }
+    #fourthly{
+      .container{
+
+        .content{
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
+@media(max-width: 768px){
+  body{
+    #second{
+      .container{
+        .content{
+          flex-direction: column;
+          .right{
+            width: 100%;
+          }
+          .left{
+            width: 100%;
+          }
+        }
+      }
+    }
+    #third{
+      .container{
+        justify-content: center;
+        .content{
+          justify-content: center;
+          width: 55%;
+        }
+      }
+    }
+    #fourthly{
+      .container{
+        padding: 0px 10px;
+        .content{
+          padding: 10px 10px;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 500px) {
+  body {
+    #third {
+      .container {
+
+        justify-content: center;
+        .content {
+          padding: 20px;
+          overflow: hidden;
+          width: 100%;
+        .line{
+          img{
+            width: 100%;
+          }
+        }
+          .columns{
+            flex-direction: column;
+            display: block;
+          }
+        }
+      }
+    }
+    #fourthly{
+      .container{
+        padding: 0;
+        .content{
+        padding: 10px;
+        }
+      }
+    }
+    #five {
+      .container {
+
+        justify-content: center;
+        .content {
+          margin: 20px 0px;
+          padding: 20px;
+          overflow: hidden;
+          width: 100%;
+          .line{
+            img{
+              width: 100%;
+            }
+          }
+          .columns{
+            flex-direction: column;
+            display: block;
+          }
+        }
+      }
+    }
+
+  }
+}
